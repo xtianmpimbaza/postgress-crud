@@ -1,13 +1,15 @@
 //#region Module import
 const userRoute = require('express').Router();
-const { User } = require('../models')
+const User = require('../models/user')
 //#endregion
 
 
 //#region Get Methods
 userRoute.get('/api/user/getAll', async (req, res) => {
+    // sequelize.sync();
     try {
         let data = await User.findAll();
+        // console.log(data);
         return (data && data.length > 0 ? res.send({ status: true, data }) : res.send({ status: false, message: 'No data found' }))
     }
     catch (e) {
@@ -54,6 +56,33 @@ userRoute.post('/api/user/addEditUser', async (req, res) => {
     }
 })
 
+
+//#Add user
+userRoute.post('/api/user/addUser', async (req, res) => {
+    try {
+        let {actionType, _id, UserName, Bio, DateOfBirth, Hobbies, Role, ProfilePic} = req.body;
+
+        let data = await User.create({UserName, Bio, DateOfBirth, Hobbies, Role, ProfilePic})
+        res.send({status: true, message: 'User  inserted successfully', user: data})
+    } catch (e) {
+        console.log(e)
+        res.send({status: false, message: 'Something went wrong.'})
+    }
+})
+
+//#edit user
+userRoute.post('/api/user/editUser', async (req, res) => {
+    try {
+        let {actionType, _id, UserName, Bio, DateOfBirth, Hobbies, Role, ProfilePic} = req.body;
+        let data = await User.update({UserName, Bio, DateOfBirth, Hobbies, Role, ProfilePic}, {where: {_id}});
+        res.send({status: true, message: 'User  updated successfully'})
+    } catch (e) {
+        console.log(e)
+        res.send({status: false, message: 'Something went wrong.'})
+    }
+})
+
+//delete user
 userRoute.post('/api/user/deleteUser', async (req, res) => {
     try {
         let { _id } = req.body
