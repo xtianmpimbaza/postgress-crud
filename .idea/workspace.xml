@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ecf4031-e480-4a38-8ea7-e8fbaf0eb05d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ORM_demo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/users/userController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +41,9 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\smartcheck\postgrescrud\server" />
+      <recent name="D:\smartcheck\postgrescrud\server\src\routes\users" />
+      <recent name="D:\smartcheck\postgrescrud\server\src\routes" />
+      <recent name="D:\smartcheck\postgrescrud\server\src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\smartcheck\postgrescrud\server" />
@@ -64,7 +62,7 @@
       <updated>1755883466486</updated>
       <workItem from="1755883469386" duration="19000" />
       <workItem from="1755992986901" duration="3735000" />
-      <workItem from="1756190228679" duration="11579000" />
+      <workItem from="1756190228679" duration="13171000" />
     </task>
     <servers />
   </component>
